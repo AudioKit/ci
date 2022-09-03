@@ -79,18 +79,3 @@ jobs:
           build-method: ${{ matrix.inputs.build-method }}
           subcommand: ${{ matrix.inputs.subcommand }}
           swift-version: ${{ matrix.inputs.swift-version }}
-
-  # Send notification to Discord on failure.
-  send_notification:
-    name: Send Notification
-    runs-on: ubuntu-latest
-    needs: [swift_test]
-    if: failure()
-    steps:
-      - name: Send Discord Notification
-        uses: sarisia/actions-status-discord@v1
-        with:
-          webhook: ${{ secrets.DISCORD_CI_WEBHOOK }}
-          title: Tests Failed
-          status: Failure
-          color: 0xff0000
