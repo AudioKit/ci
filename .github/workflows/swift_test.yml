@@ -63,7 +63,8 @@ jobs:
     runs-on: ${{ matrix.inputs.runner }}
     needs: [create_swift_test_matrix]
     strategy:
-      fail-fast: false
+      # Setting 'fail-fast' to 'true' implies the build will fail the first time it encounters an error.
+      fail-fast: true
       matrix:
         inputs: ${{ fromJSON(needs.create_swift_test_matrix.outputs.test-matrix) }}
     steps:
