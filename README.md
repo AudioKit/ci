@@ -2,8 +2,6 @@
 
 This repository serves as a collection of AudioKit CI scripts, workflows, and actions.
 
-> Copied and modified from [bdrelling/ci](https://github.com/bdrelling/ci).
-
 ## Overview
 
 | Repository | Tests | Version | Swift | Platforms |
@@ -20,3 +18,7 @@ This repository serves as a collection of AudioKit CI scripts, workflows, and ac
 | [Tonic](https://github.com/AudioKit/Tonic) | [![](https://github.com/AudioKit/Tonic/actions/workTonics/tests.yml/badge.svg)](https://github.com/AudioKit/Tonic/actions/workTonics/tests.yml) | [![](https://img.shields.io/github/v/tag/AudioKit/Tonic?color=blue&label=latest)](https://github.com/AudioKit/Tonic/tags) | [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FAudioKit%2FTonic%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/AudioKit/Tonic) | [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FAudioKit%2FTonic%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/AudioKit/Tonic) |
 
 > When updating the above table, I recommend copying an entry, pasting into a standalone text document, and using find and replace to change the repository name.
+
+## More Information
+
+This repository was copied and modified from [bdrelling/ci](https://github.com/bdrelling/ci). If you have any questions around this repo, feel free to reach out to [@bdrelling](https://github.com/bdrelling) directly.
