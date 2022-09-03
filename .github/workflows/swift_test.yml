@@ -24,9 +24,6 @@ on:
         required: false
         type: string
         default: '5.6'
-    secrets:
-      DISCORD_CI_WEBHOOK:
-        required: true
 
 jobs:
   prepare:
