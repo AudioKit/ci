@@ -11,7 +11,7 @@ inputs:
   xcode_version:
     description: 'The version of Xcode to use. Ensure that your version is compatible with your selected runner. (Reference: https://swiftversion.net)'
     required: false
-    default: '13.4'
+    default: 'latest'
 runs:
   using: 'composite'
   steps:
